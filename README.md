@@ -10,8 +10,8 @@ cost in CI.
 
 I pointed it at four popular MCP servers. Before you type a single character,
 your request already carries **46 tool definitions, ~8,300 tokens, ≈$0.04 — on
-every call**. Tool schemas were 99.8% of that input, and one single tool cost
-more than an entire twelve-tool server.
+every call**. Tool schemas were 99.8% of that input, and one single tool was the
+most expensive definition of all 46.
 [The measurement.](https://github.com/Evge14n/ctxprofile/blob/main/docs/case-study-mcp.md)
 
 `Python` · `zero runtime deps` · `62 tests` · `mypy --strict` · optional MCP server · `MIT`
