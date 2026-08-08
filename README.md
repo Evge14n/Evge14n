@@ -6,9 +6,13 @@ that keeps them reliable. Python. Self-taught. Ternopil, Ukraine.
 #### 🔦 [ctxprofile](https://github.com/Evge14n/ctxprofile)
 
 An offline CLI that costs an LLM request **per context component** and gates that
-cost in CI. Building it, the first thing it showed me was uncomfortable: on a
-typical coding-agent request, **half the input cost was tool definitions the
-model never called** — and you pay for those on every single call.
+cost in CI.
+
+I pointed it at four popular MCP servers. Before you type a single character,
+your request already carries **46 tool definitions, ~8,300 tokens, ≈$0.04 — on
+every call**. Tool schemas were 99.8% of that input, and one single tool cost
+more than an entire twelve-tool server.
+[The measurement.](https://github.com/Evge14n/ctxprofile/blob/main/docs/case-study-mcp.md)
 
 `Python` · `zero runtime deps` · `62 tests` · `mypy --strict` · optional MCP server · `MIT`
 
